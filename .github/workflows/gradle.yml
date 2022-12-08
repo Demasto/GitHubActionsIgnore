@@ -21,10 +21,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        jdk: [8, 11, 17]
     runs-on: ${{ matrix.os }}
-    env:
-      JDK_VERSION: ${{ matrix.jdk }}
+
 
     steps:
     - uses: actions/checkout@v3
